@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>shopping website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-image: url('bg.jpg');
+                background-size: cover;
+            }
+            .logo{
+                display: inline-block;
+                position: absolute;
+                top: 0px;
+                text-align: center;
+            }
+            #logo{
+                width: 80px;
+                height: 80px;
+            }
+            h2{
+                margin-block-start: 0px;
+                font-family: arial;
+                font-size: 16px;
+            }
+            .logo a{
+                text-decoration: none;
+                color: black;
+            }
+            .navigation{
+                background-color: black;
+                border: 2px solid white;
+                border-radius: 5px;;
+                width: 413px;
+                margin: 0px auto;
+                font-size: 16px;
+            }
+            .box{
+                list-style: none;
+            }
+            .item{
+                display: inline-block;
+                margin: 0px 5px;
+                color: white;
+                font-family: sans-serif;
+            }
+            ul li a{
+                text-decoration: none;
+                color: white;
+                /* font-weight: bold; */
+            }
+            ul li a:hover{
+                text-decoration: underline;
+                color: yellow;
+            }
+            .search{
+                position : absolute;
+                right: 20px;
+                top: 20px;
+            }
+            #searchbox{
+                border: 2px solid black;
+                border-radius: 3px;
+                padding: 5px;
+                width: 150px;
+            }    
+            form{
+                color: white;
+                font-size: 15px;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+                background-color: black;
+                border: 3px solid white;
+                border-radius: 12px;
+                width: 440px;
+                margin: 100px auto 0px auto;
+                padding: 20px 0px 20px 40px;
+            }
+            form h2{
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-size: 26px;
+                text-align: center;
+                text-decoration: underline;
+            }
+            input[type="submit"],input[type="reset"]{
+                cursor: pointer;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header class="container">
+                <div class="logo">
+                    <a href="#" target="_blank"><img src="logo.png" id="logo"></a>
+                    <a href="#" target="_blank"><h2>Fashion Store</h2></a>
+                </div>
+                <div class="navigation">
+                    <ul class="box">
+                        <li class="item" id="item1"><a href="#" target="_blank">Home</a></li>
+                        <li class="item" id="item2"><a href="#" target="_blank">Fashion Item</a></li>
+                        <li class="item" id="item3"><a href="#" target="_blank">About</a></li>
+                        <li class="item" id="item4"><a href="#" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="search box" name="searchbox" id="searchbox">
+                </div>
+        </header>
+            <form action="/registration.php">
+                <h2>Create a new account</h2><br><br>
+                Name: <input type="text" placeholder="enter your name here" name="fullname" required><br><br>
+                Gender : <input type="radio" name="gender">Male <input type="radio" name="gender">Female <input type="radio" name="gender">Other
+                <br><br>
+                D.O.B : <input type="date" name="birthdate" required><br><br>
+                Contact Number: <input type="number" placeholder="enter your contact number" name="contactnumber" required><br><br>
+                Email Id: <input type="email" placeholder="enter your email id" name="emailid" required><br><br>
+                Password: <input type="password" placeholder="enter password" name="password" required><br><br>
+                Confirm Password: <input type="password" placeholder="enter password again" name="password" required><br><br><br>
+                <div class="btn">
+                    <input type="submit" value="Sign up" name="signup">
+                    <input type="reset" value="Clear" name="clear">
+                </div>
+            </form>
+    </body>
+</html>
